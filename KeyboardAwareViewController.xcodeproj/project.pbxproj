@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1A290B931E0EB02A004EB721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290B921E0EB02A004EB721 /* AppDelegate.swift */; };
-		1A290B951E0EB02A004EB721 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290B941E0EB02A004EB721 /* ViewController.swift */; };
+		1A290B951E0EB02A004EB721 /* PlainScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290B941E0EB02A004EB721 /* PlainScrollViewController.swift */; };
 		1A290B981E0EB02A004EB721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A290B961E0EB02A004EB721 /* Main.storyboard */; };
 		1A290B9A1E0EB02A004EB721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A290B991E0EB02A004EB721 /* Assets.xcassets */; };
 		1A290B9D1E0EB02A004EB721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A290B9B1E0EB02A004EB721 /* LaunchScreen.storyboard */; };
+		1A290BA61E0EB0F9004EB721 /* KeyboardAvoidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290BA51E0EB0F9004EB721 /* KeyboardAvoidable.swift */; };
+		1A290BA91E0EB310004EB721 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290BA81E0EB310004EB721 /* KeyboardNotification.swift */; };
+		1A290BAC1E0EBF50004EB721 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290BAB1E0EBF50004EB721 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A290B8F1E0EB02A004EB721 /* KeyboardAwareViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardAwareViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A290B921E0EB02A004EB721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A290B941E0EB02A004EB721 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A290B941E0EB02A004EB721 /* PlainScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainScrollViewController.swift; sourceTree = "<group>"; };
 		1A290B971E0EB02A004EB721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A290B991E0EB02A004EB721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A290B991E0EB02A004EB721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		1A290B9C1E0EB02A004EB721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1A290B9E1E0EB02A004EB721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A290B9E1E0EB02A004EB721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		1A290BA51E0EB0F9004EB721 /* KeyboardAvoidable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardAvoidable.swift; path = ../KeyboardAvoidable.swift; sourceTree = "<group>"; };
+		1A290BA81E0EB310004EB721 /* KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
+		1A290BAB1E0EBF50004EB721 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		1A290B911E0EB02A004EB721 /* KeyboardAwareViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1A290BAA1E0EBF44004EB721 /* Extensions */,
+				1A290BA71E0EB2FC004EB721 /* KeyboardHelpers */,
 				1A290B921E0EB02A004EB721 /* AppDelegate.swift */,
-				1A290B941E0EB02A004EB721 /* ViewController.swift */,
+				1A290B941E0EB02A004EB721 /* PlainScrollViewController.swift */,
 				1A290B961E0EB02A004EB721 /* Main.storyboard */,
-				1A290B991E0EB02A004EB721 /* Assets.xcassets */,
-				1A290B9B1E0EB02A004EB721 /* LaunchScreen.storyboard */,
-				1A290B9E1E0EB02A004EB721 /* Info.plist */,
+				1A290BA41E0EB0A4004EB721 /* Resources */,
 			);
 			path = KeyboardAwareViewController;
+			sourceTree = "<group>";
+		};
+		1A290BA41E0EB0A4004EB721 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A290B9B1E0EB02A004EB721 /* LaunchScreen.storyboard */,
+				1A290B991E0EB02A004EB721 /* Assets.xcassets */,
+				1A290B9E1E0EB02A004EB721 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A290BA71E0EB2FC004EB721 /* KeyboardHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				1A290BA51E0EB0F9004EB721 /* KeyboardAvoidable.swift */,
+				1A290BA81E0EB310004EB721 /* KeyboardNotification.swift */,
+			);
+			path = KeyboardHelpers;
+			sourceTree = "<group>";
+		};
+		1A290BAA1E0EBF44004EB721 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A290BAB1E0EBF50004EB721 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A290B951E0EB02A004EB721 /* ViewController.swift in Sources */,
+				1A290B951E0EB02A004EB721 /* PlainScrollViewController.swift in Sources */,
+				1A290BAC1E0EBF50004EB721 /* UIColor+Extensions.swift in Sources */,
+				1A290BA91E0EB310004EB721 /* KeyboardNotification.swift in Sources */,
+				1A290BA61E0EB0F9004EB721 /* KeyboardAvoidable.swift in Sources */,
 				1A290B931E0EB02A004EB721 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +195,7 @@
 				1A290B9C1E0EB02A004EB721 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +337,7 @@
 				1A290BA31E0EB02A004EB721 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
