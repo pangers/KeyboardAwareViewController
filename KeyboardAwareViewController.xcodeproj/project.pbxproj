@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A290B931E0EB02A004EB721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290B921E0EB02A004EB721 /* AppDelegate.swift */; };
-		1A290B951E0EB02A004EB721 /* PlainScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290B941E0EB02A004EB721 /* PlainScrollViewController.swift */; };
+		1A290B951E0EB02A004EB721 /* KeyboardScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A290B941E0EB02A004EB721 /* KeyboardScrollViewController.swift */; };
 		1A290B981E0EB02A004EB721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A290B961E0EB02A004EB721 /* Main.storyboard */; };
 		1A290B9A1E0EB02A004EB721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A290B991E0EB02A004EB721 /* Assets.xcassets */; };
 		1A290B9D1E0EB02A004EB721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A290B9B1E0EB02A004EB721 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		1A290B8F1E0EB02A004EB721 /* KeyboardAwareViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardAwareViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A290B921E0EB02A004EB721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A290B941E0EB02A004EB721 /* PlainScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainScrollViewController.swift; sourceTree = "<group>"; };
+		1A290B941E0EB02A004EB721 /* KeyboardScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyboardScrollViewController.swift; path = ../../KeyboardScrollViewController.swift; sourceTree = "<group>"; };
 		1A290B971E0EB02A004EB721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A290B991E0EB02A004EB721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		1A290B9C1E0EB02A004EB721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,11 +60,10 @@
 		1A290B911E0EB02A004EB721 /* KeyboardAwareViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1A290BAD1E0F779A004EB721 /* Interface */,
 				1A290BAA1E0EBF44004EB721 /* Extensions */,
 				1A290BA71E0EB2FC004EB721 /* KeyboardHelpers */,
 				1A290B921E0EB02A004EB721 /* AppDelegate.swift */,
-				1A290B941E0EB02A004EB721 /* PlainScrollViewController.swift */,
-				1A290B961E0EB02A004EB721 /* Main.storyboard */,
 				1A290BA41E0EB0A4004EB721 /* Resources */,
 			);
 			path = KeyboardAwareViewController;
@@ -95,6 +94,24 @@
 				1A290BAB1E0EBF50004EB721 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A290BAD1E0F779A004EB721 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1A290BAE1E0F77AC004EB721 /* KeyboardScrollViewController */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		1A290BAE1E0F77AC004EB721 /* KeyboardScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A290B941E0EB02A004EB721 /* KeyboardScrollViewController.swift */,
+				1A290B961E0EB02A004EB721 /* Main.storyboard */,
+			);
+			name = KeyboardScrollViewController;
+			path = PlainScrollViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A290B951E0EB02A004EB721 /* PlainScrollViewController.swift in Sources */,
+				1A290B951E0EB02A004EB721 /* KeyboardScrollViewController.swift in Sources */,
 				1A290BAC1E0EBF50004EB721 /* UIColor+Extensions.swift in Sources */,
 				1A290BA91E0EB310004EB721 /* KeyboardNotification.swift in Sources */,
 				1A290BA61E0EB0F9004EB721 /* KeyboardAvoidable.swift in Sources */,
@@ -187,6 +204,7 @@
 				1A290B971E0EB02A004EB721 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		1A290B9B1E0EB02A004EB721 /* LaunchScreen.storyboard */ = {
