@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Keyboard Scroll View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="KeyboardScrollViewController" customModule="KeyboardAwareViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -72,11 +72,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DiA-bX-Cmb"/>
-                    <connections>
-                        <outlet property="contentStackView" destination="gSb-pZ-f7v" id="xXJ-Ym-Oa3"/>
-                        <outlet property="outerStackView" destination="Ad6-qM-oHb" id="0SV-Jk-QTc"/>
-                        <outlet property="pinnedStackView" destination="jVZ-KC-M1P" id="Aco-MZ-t2u"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
