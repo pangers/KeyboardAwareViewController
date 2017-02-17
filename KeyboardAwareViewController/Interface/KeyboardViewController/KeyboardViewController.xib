@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="KeyboardAwareViewController" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomStackView" destination="CLt-fE-EKd" id="58k-gg-CN2"/>
+                <outlet property="contentStackView" destination="K81-vo-Ss9" id="4gq-up-3yX"/>
+                <outlet property="outerStackView" destination="vrn-WO-wMc" id="Tto-IX-rFj"/>
+                <outlet property="topStackView" destination="yUZ-El-kbN" id="Ff1-Kr-QX3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vrn-WO-wMc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="96" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yUZ-El-kbN">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="495" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K81-vo-Ss9">
+                            <rect key="frame" x="0.0" y="96" width="375" height="495"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="76" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CLt-fE-EKd">
+                            <rect key="frame" x="0.0" y="591" width="375" height="76"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="CLt-fE-EKd" firstAttribute="leading" secondItem="vrn-WO-wMc" secondAttribute="leading" id="AgY-MU-JzN"/>
+                        <constraint firstAttribute="bottom" secondItem="CLt-fE-EKd" secondAttribute="bottom" id="OGD-P4-TDu"/>
+                        <constraint firstItem="K81-vo-Ss9" firstAttribute="top" secondItem="yUZ-El-kbN" secondAttribute="bottom" id="P1q-tT-ZHB"/>
+                        <constraint firstAttribute="trailing" secondItem="K81-vo-Ss9" secondAttribute="trailing" id="cge-dk-jyf"/>
+                        <constraint firstItem="yUZ-El-kbN" firstAttribute="leading" secondItem="vrn-WO-wMc" secondAttribute="leading" id="eMK-7a-xf7"/>
+                        <constraint firstAttribute="trailing" secondItem="CLt-fE-EKd" secondAttribute="trailing" id="itt-pK-Ofo"/>
+                        <constraint firstItem="K81-vo-Ss9" firstAttribute="leading" secondItem="vrn-WO-wMc" secondAttribute="leading" id="lQr-CI-Y65"/>
+                        <constraint firstAttribute="trailing" secondItem="yUZ-El-kbN" secondAttribute="trailing" id="nvV-op-x68"/>
+                        <constraint firstItem="CLt-fE-EKd" firstAttribute="top" secondItem="K81-vo-Ss9" secondAttribute="bottom" id="s8a-P3-mlp"/>
+                        <constraint firstItem="yUZ-El-kbN" firstAttribute="top" secondItem="vrn-WO-wMc" secondAttribute="top" id="wxO-HS-7R4"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vrn-WO-wMc" secondAttribute="trailing" id="3qN-pB-vdf"/>
+                <constraint firstItem="vrn-WO-wMc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5hv-0u-8Dv"/>
+                <constraint firstItem="vrn-WO-wMc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eX9-kv-6Z0"/>
+                <constraint firstAttribute="bottom" secondItem="vrn-WO-wMc" secondAttribute="bottom" id="hhI-ra-4QO"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="59.5"/>
+        </view>
+    </objects>
+</document>
