@@ -10,7 +10,6 @@ import UIKit
 
 class KeyboardViewController: UIViewController {
 
-    @IBOutlet weak var outerStackView: UIStackView!
     @IBOutlet weak var topStackView: UIStackView!
     @IBOutlet weak var contentStackView: UIStackView!
     @IBOutlet weak var bottomStackView: UIStackView!
