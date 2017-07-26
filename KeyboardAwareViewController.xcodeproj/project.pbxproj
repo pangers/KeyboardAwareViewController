@@ -17,7 +17,9 @@
 		1A70585B1E0F84BE001F0BF2 /* KeyboardScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7058591E0F84BE001F0BF2 /* KeyboardScrollViewController.swift */; };
 		1A70585C1E0F84BE001F0BF2 /* KeyboardScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A70585A1E0F84BE001F0BF2 /* KeyboardScrollViewController.xib */; };
 		1A7058601E0F8822001F0BF2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70585E1E0F8822001F0BF2 /* SecondViewController.swift */; };
-		1A7058611E0F8822001F0BF2 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A70585F1E0F8822001F0BF2 /* SecondViewController.xib */; };
+		2A1993361E567CE1008096F0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1993351E567CE1008096F0 /* UIViewController+Extensions.swift */; };
+		2A2DDAD11E5677EC000C7562 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DDACF1E5677EC000C7562 /* KeyboardViewController.swift */; };
+		2A2DDAD21E5677EC000C7562 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2DDAD01E5677EC000C7562 /* KeyboardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,9 @@
 		1A7058591E0F84BE001F0BF2 /* KeyboardScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardScrollViewController.swift; path = KeyboardAwareViewController/Interface/KeyboardScrollViewController/KeyboardScrollViewController.swift; sourceTree = SOURCE_ROOT; };
 		1A70585A1E0F84BE001F0BF2 /* KeyboardScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeyboardScrollViewController.xib; path = KeyboardAwareViewController/Interface/KeyboardScrollViewController/KeyboardScrollViewController.xib; sourceTree = SOURCE_ROOT; };
 		1A70585E1E0F8822001F0BF2 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		1A70585F1E0F8822001F0BF2 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		2A1993351E567CE1008096F0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2A2DDACF1E5677EC000C7562 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		2A2DDAD01E5677EC000C7562 /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				1A290BAB1E0EBF50004EB721 /* UIColor+Extensions.swift */,
+				2A1993351E567CE1008096F0 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			children = (
 				1A70585D1E0F87E5001F0BF2 /* SecondViewController */,
 				1A290BB11E0F80FC004EB721 /* FirstViewController */,
+				2A2DDACE1E5677D3000C7562 /* KeyboardViewController */,
 				1A290BAE1E0F77AC004EB721 /* KeyboardScrollViewController */,
 			);
 			path = Interface;
@@ -134,9 +140,17 @@
 			isa = PBXGroup;
 			children = (
 				1A70585E1E0F8822001F0BF2 /* SecondViewController.swift */,
-				1A70585F1E0F8822001F0BF2 /* SecondViewController.xib */,
 			);
 			path = SecondViewController;
+			sourceTree = "<group>";
+		};
+		2A2DDACE1E5677D3000C7562 /* KeyboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DDACF1E5677EC000C7562 /* KeyboardViewController.swift */,
+				2A2DDAD01E5677EC000C7562 /* KeyboardViewController.xib */,
+			);
+			path = KeyboardViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A7058611E0F8822001F0BF2 /* SecondViewController.xib in Resources */,
+				2A2DDAD21E5677EC000C7562 /* KeyboardViewController.xib in Resources */,
 				1A290B9D1E0EB02A004EB721 /* LaunchScreen.storyboard in Resources */,
 				1A290B9A1E0EB02A004EB721 /* Assets.xcassets in Resources */,
 				1A70585C1E0F84BE001F0BF2 /* KeyboardScrollViewController.xib in Resources */,
@@ -217,9 +231,11 @@
 				1A290BAC1E0EBF50004EB721 /* UIColor+Extensions.swift in Sources */,
 				1A290BA91E0EB310004EB721 /* KeyboardNotification.swift in Sources */,
 				1A290BB31E0F8113004EB721 /* FirstViewController.swift in Sources */,
+				2A1993361E567CE1008096F0 /* UIViewController+Extensions.swift in Sources */,
 				1A7058601E0F8822001F0BF2 /* SecondViewController.swift in Sources */,
 				1A290BA61E0EB0F9004EB721 /* KeyboardAvoidable.swift in Sources */,
 				1A290B931E0EB02A004EB721 /* AppDelegate.swift in Sources */,
+				2A2DDAD11E5677EC000C7562 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
