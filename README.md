@@ -1,5 +1,5 @@
 # KeyboardAwareViewController
 
-Demo project for post about [Keyboard Management](http://www.pangers.com/tech/2016/12/28/keyboard-management)
+Demo project for post about [Keyboard Management](https://medium.com/pangers/keyboard-management-a7cda33e40c6)
 
 ![demo](Screenshots/demo.gif)
